@@ -1,6 +1,7 @@
-from views import GetView
+from . import views
 from django.urls import path
 
+app_name = 'products'
 urlpatterns = [
-    path('',GetView.as_view(),name='getview'),
+    path('',views.GetView.as_view(),name='getview'),
 ]

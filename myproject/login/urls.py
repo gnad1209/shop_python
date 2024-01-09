@@ -1,6 +1,7 @@
-from views import GetView
+from . import views
 from django.urls import path
 
-# urlpatterns = [
-#     path('',GetView.as_view(),name='getview'),
-# ]
+app_name = 'login'
+urlpatterns = [
+    path('',views.GetView.as_view(),name='getview'),
+]
